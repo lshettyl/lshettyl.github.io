@@ -434,7 +434,7 @@ aside .m-heading {
     min-width: 144px;
     display: table-cell;
     margin-left: 14px;
-    width: 144px;
+    width: 20%;
 }
 
 .m-thumbs__link:hover {

@@ -1,6 +1,10 @@
-// Image carousel
 (function() {
 
+    if (location.search && location.search.match(/mode=full/gi) !== null) {
+        document.getElementById('container').style.width = 'auto';
+    }
+
+    // Image carousel
     let slideIndex = 1;
 
     let showSlide = (n) => {
