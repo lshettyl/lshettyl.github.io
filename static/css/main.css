@@ -434,7 +434,7 @@ aside .m-heading {
     text-decoration: underline;
 }
 
-.m-thumbs__item:first-child {
+.m-thumbs__item.row-item-first {
     margin: 0;
 }
 
