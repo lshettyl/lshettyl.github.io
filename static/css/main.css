@@ -422,12 +422,18 @@ aside .m-heading {
 }
 .m-thumbs ul {
     list-style-type: none;
+    display: table;
     display: flex;
+    border-collapse: separate;
+    border-spacing: 14px;
+    margin-left: -14px;
 }
 
 .m-thumbs__item {
-    max-width: 25%;
+    min-width: 144px;
+    display: table-cell;
     margin-left: 14px;
+    width: 144px;
 }
 
 .m-thumbs__link:hover {
