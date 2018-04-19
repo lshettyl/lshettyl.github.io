@@ -296,10 +296,11 @@ a {
 
 .banner {
     text-align: center;
+    margin: 10px 0 0;
 }
 .banner img {
     max-width: 100%;
-    width: 880px;
+    width: 100%;
     border: 0 none;
     outline: none;
 }
@@ -446,6 +447,7 @@ aside .m-heading {
 
 .m-thumbs__image {
     max-width: 100%;
+    width: 100%;
 }
 
 .m-thumbs__caption, .m-caption {
@@ -531,4 +533,30 @@ aside .m-heading {
 .carousel__button--right {
     border-radius: 5px 0 0 5px;
     right: 0%;
+}
+
+.footer {
+    padding: 20px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0 0 10px;
+    background-color: #f1f1f1;
+}
+
+.footer__links {
+    padding: 0 0 10px;
+}
+
+.footer__links > a {
+    display: block;
+    float: left;
+    padding: 0 5px;
+    margin-left: 5px;
+    border-left: 1px solid #333;
+}
+
+.footer__links > a:first-child {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
 }
