@@ -545,6 +545,7 @@ aside .m-heading {
 
 .footer__links {
     float: right;
+    font-size: 14px;
 }
 
 .footer__links > a {
@@ -552,11 +553,20 @@ aside .m-heading {
     float: left;
     padding: 0 5px;
     margin-left: 5px;
-    border-left: 1px solid #333;
+    border-left: 1px solid #c1c1c1;
+}
+
+.footer__links > a:hover {
+    text-decoration: underline;
 }
 
 .footer__links > a:first-child {
     border: 0 none;
     margin: 0;
     padding: 0;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    color: #666;
 }
