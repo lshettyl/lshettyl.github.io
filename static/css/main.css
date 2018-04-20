@@ -315,7 +315,7 @@ a {
   list-style-type: none;
 }
 .menu ul li {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 1rem;
   font-weight: 400;
   color: #333;
@@ -337,7 +337,7 @@ a {
   left: 0;
   position: absolute;
 }
-.menu ul li:hover a {
+.menu ul li a:hover {
     text-decoration: underline;
 }
 .menu ul li:hover ul li {

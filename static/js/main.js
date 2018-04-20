@@ -9,7 +9,7 @@
 
     let showSlide = (n) => {
         
-        const carousel__slides = document.querySelectorAll(".carousel__slides");
+        const carousel__slides = document.querySelectorAll(".carousel__slide");
         n > carousel__slides.length && (slideIndex = 1);
         n < 1 && (slideIndex = carousel__slides.length);
         carousel__slides.forEach((elem, index) => elem.style.display = "none");
