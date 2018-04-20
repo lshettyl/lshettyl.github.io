@@ -570,3 +570,44 @@ aside .m-heading {
     font-size: 14px;
     color: #666;
 }
+
+.flash-news + .container {
+    margin-top: 44px;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes glow-text {
+    0%   {color: red;}
+    25%  {color: #e1e1e1;}
+    50%  {color: maroon;}
+    75%  {color: #e3e3e3}
+    100% {color: white;}
+}
+
+/* Standard syntax */
+@keyframes glow-text {
+    0%   {color: red;}
+    25%  {color: #e1e1e1;}
+    50%  {color: maroon;}
+    75%  {color: #e3e3e3}
+    100% {color: white;}
+}
+
+.flash-news__glow-text, .flash-news__glow-text a {
+    animation: glow-text 4s linear infinite;
+    -webkit-animation: glow-text 4s linear infinite;
+}
+.flash-news {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0080ff;
+    color: #fff;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding: 10px 10px;
+}
+.flash-news > a {
+    font-weight: 600;
+    color: #B22222;
+}
