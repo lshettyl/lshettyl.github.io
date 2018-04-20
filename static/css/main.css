@@ -592,10 +592,10 @@ aside .m-heading {
     100% {color: white;}
 }
 
-.flash-news__glow-text, .flash-news__glow-text a {
+/* .flash-news__glow-text, .flash-news__glow-text a {
     animation: glow-text 4s linear infinite;
     -webkit-animation: glow-text 4s linear infinite;
-}
+} */
 .flash-news {
     position: fixed;
     top: 0;
@@ -607,7 +607,7 @@ aside .m-heading {
     text-align: center;
     padding: 10px 10px;
 }
-.flash-news > a {
+.flash-news a {
     font-weight: 600;
     color: #B22222;
 }
