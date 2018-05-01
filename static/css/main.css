@@ -381,7 +381,7 @@ aside {
 
 .profile__descrption {
     padding-left: 16px;
-    max-width: 536px;
+    max-width: 522px;
 }
 
 .profile__pic, .profile__descrption {
@@ -443,6 +443,7 @@ aside .m-heading {
     margin-left: 2%;
     margin-bottom: 16px;
     width: 31.2%;
+    /*width: 17.9%;*/
 }
 
 .m-thumbs__link:hover {
