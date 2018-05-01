@@ -466,6 +466,7 @@ aside .m-heading {
 
 .m-thumbs__caption {
   min-height: 64px;
+  max-height: 84px;
 }
 
 .module {
