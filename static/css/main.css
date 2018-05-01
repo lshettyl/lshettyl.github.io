@@ -375,11 +375,18 @@ aside {
 }
 
 .profile {
-    display: flex;
+    /*display: flex;*/
+    font-size: 0;
 }
 
 .profile__descrption {
     padding-left: 10px;
+}
+
+.profile__pic, .profile__descrption {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
 }
 
 .profile__pic {
