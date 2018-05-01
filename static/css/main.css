@@ -431,18 +431,18 @@ aside .m-heading {
 }
 .m-thumbs ul {
     list-style-type: none;
-    display: table;
-    display: flex;
-    border-collapse: separate;
-    border-spacing: 14px;
     margin-left: -14px;
 }
 
 .m-thumbs__item {
-    min-width: 144px;
+/*    min-width: 144px;
     display: table-cell;
     margin-left: 14px;
-    width: 20%;
+    width: 20%;*/
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 16px;
+    width: 31.2%;
 }
 
 .m-thumbs__link:hover {
@@ -461,6 +461,10 @@ aside .m-heading {
 .m-thumbs__caption, .m-caption {
     padding: 10px;
     font-size: 15px;
+}
+
+.m-thumbs__caption {
+  min-height: 64px;
 }
 
 .module {
