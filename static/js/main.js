@@ -12,7 +12,7 @@
         const carousel__slides = document.querySelectorAll(".carousel__slide");
         n > carousel__slides.length && (slideIndex = 1);
         n < 1 && (slideIndex = carousel__slides.length);
-        carousel__slides.forEach((elem, index) => elem.style.display = "none");
+        carousel__slides.forEach(function(elem, index) { elem.style.display = "none"});
         carousel__slides[slideIndex - 1].style.display = "block";
     }
 
