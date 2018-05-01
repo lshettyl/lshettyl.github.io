@@ -7,8 +7,8 @@
     // Image carousel
     let slideIndex = 1;
 
-    let showSlide = (n) => {
-        
+    let showSlide = function(n) {
+
         const carousel__slides = document.querySelectorAll(".carousel__slide");
         n > carousel__slides.length && (slideIndex = 1);
         n < 1 && (slideIndex = carousel__slides.length);
@@ -17,7 +17,9 @@
     }
 
     showSlide(slideIndex);
-    let goToSlide = (n) => showSlide(slideIndex += n);
-    document.querySelector('.carousel__button--left').addEventListener('click', () => goToSlide(-1));
-    document.querySelector('.carousel__button--right').addEventListener('click', () => goToSlide(1));
+    let goToSlide = function(n)  {
+        showSlide(slideIndex += n);
+    }
+    document.querySelector('.carousel__button--left').addEventListener('click', function() { goToSlide(-1) });
+    document.querySelector('.carousel__button--right').addEventListener('click', function() { goToSlide(1) });
 }());
