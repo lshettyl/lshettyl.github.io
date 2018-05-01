@@ -442,8 +442,8 @@ aside .m-heading {
     float: left;
     margin-left: 2%;
     margin-bottom: 16px;
-    width: 31.2%;
-    /*width: 17.9%;*/
+    /*width: 31.2%;*/ /*3 thumbs per row*/
+    width: 17.9%; /*5 thumbs per row*/
 }
 
 .m-thumbs__link:hover {
