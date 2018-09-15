@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Employee Referrals</title>
+	    <!-- Bootstrap CSS CDN -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	    <!-- Our Custom CSS -->
+	    <link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+
+	    <div class="wrapper">
+	        <!-- Sidebar Holder -->
+	        <nav id="sidebar">
+	            <div class="sidebar-header">
+	                <h3>Employee Referrals</h3>
+	            </div>
+
+	            <ul class="list-unstyled components">
+	                <li class="active">
+	                    <a href="#">Home</a>
+	                </li>
+	                <li>
+	                    <a href="#">Positions</a>
+	                </li>
+	                <li>
+	                    <a href="#" >Referral Guide</a>
+	                </li>
+	                <li>
+	                    <a href="#">Rewards</a>
+	                </li>
+	                <li>
+	                    <a href="#">Report</a>
+	                </li>
+	            </ul>
+
+	            <!-- Buttons, just in case :)
+	            <ul class="list-unstyled CTAs">
+	                <li>
+	                    <a href="#" class="download">Download</a>
+	                </li>
+	                <li>
+	                    <a href="#" class="article">Back to article</a>
+	                </li>
+	            </ul> -->
+	        </nav>
+
+	        <!-- Page Content Holder -->
+	        <div id="content">
+	            <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="refer-tab" data-toggle="tab" href="#refer" role="tab" aria-controls="refer" aria-selected="true">Refer a Friend</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="active-referrals-tab" data-toggle="tab" href="#active-referrals" role="tab" aria-controls="active-referrals" aria-selected="false">My Active Referrals</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="referral-history-tab" data-toggle="tab" href="#referral-history" role="tab" aria-controls="referral-history" aria-selected="false">Referral History</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="refer" role="tabpanel" aria-labelledby="refer-tab">
+				  	
+				  	<form id='refer-candidate' action='/a-server-endpoint-that-can/receive/and/process/this/data/' method='post' enctype="multipart/form-data" accept-charset='UTF-8'>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label>Job ID</label>
+					      <input required type="text" class="form-control" placeholder="AX25TY8778">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label>Job Title</label>
+					      <input required type="text" class="form-control" placeholder="Test Architect">
+					    </div>
+					  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label>SigNum</label>
+					      <input required type="text" class="form-control" placeholder="SN117514">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label>Email Address</label>
+					      <input required type="email" class="form-control" placeholder="refer@me.com">
+					    </div>
+					  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label>First Name</label>
+					      <input required type="text" class="form-control" placeholder="John">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label>Last Name</label>
+					      <input required type="text" class="form-control" placeholder="Doe">
+					    </div>
+					  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label>Contact Number</label>
+					      <input required type="text" class="form-control" placeholder="9845012345">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label>Upload Resume</label>
+					      <div class="js box">
+							<input required type="file" name="files[]" id="file-upload" class="inputfile" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf" />
+							<label for="file-upload"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+						</div>
+
+
+					    </div>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+
+				  </div>
+				  <div class="tab-pane fade" id="active-referrals" role="tabpanel" aria-labelledby="active-referrals-tab">
+
+					<table class="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col">Job ID</th>
+					      <th scope="col">Job Title</th>
+					      <th scope="col">SigNum</th>
+					      <th scope="col">Email ID</th>
+					      <th scope="col">First Name</th>
+					      <th scope="col">Last Name</th>
+					      <th scope="col">Phone #</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	<!-- Data from a backend service -->
+					    <tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr><tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob Mayor Sahab Brill</td>
+					      <td>(541) 754-3010</td>
+					    </tr><tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr>
+					  </tbody>
+					</table>
+
+				  </div>
+				  <div class="tab-pane fade" id="referral-history" role="tabpanel" aria-labelledby="referral-history-tab">
+				  	
+				  	<table class="table table-hover">
+					  <thead>
+					    <tr>
+					      <th scope="col">Job ID</th>
+					      <th scope="col">Job Title</th>
+					      <th scope="col">SigNum</th>
+					      <th scope="col">Email ID</th>
+					      <th scope="col">First Name</th>
+					      <th scope="col">Last Name</th>
+					      <th scope="col">Phone #</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	<!-- Data from a backend service -->
+					    <tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr><tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob Mayor Sahab Brill</td>
+					      <td>(541) 754-3010</td>
+					    </tr><tr>
+					      <th scope="row">AX25TY8778</th>
+					      <td>Test Architect</td>
+					      <td>117514</td>
+					      <td>refer@me.com</td>
+					      <td>Billy</td>
+					      <td>Bob</td>
+					      <td>(541) 754-3010</td>
+					    </tr>
+					  </tbody>
+					</table>
+
+				  </div>
+				</div>
+	        </div>
+	    </div>
+
+	    <!-- jQuery CDN - Slim version (=without AJAX) -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <!-- Popper.JS -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	    <!-- Bootstrap JS -->
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="fileupload.js"></script>
+	</body>
+</html>
